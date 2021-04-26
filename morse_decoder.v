@@ -13,7 +13,7 @@ module morse_decoder
     
     localparam s0=0, s1=1, s2=2, s3=3, s4=4;
     
-    //100ms timer. output used to increment counter
+    //50ms timer. output used to increment counter
     timer_parameter #(.FINAL_VALUE(time_unit)) morse_time(
         .clk(clk),
         .reset_n(b),
