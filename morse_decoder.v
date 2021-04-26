@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module morse_decoder
-    //100ms delay
-    #(parameter time_unit = 9_999_999, BITS = 3)(
+    //50ms delay
+    #(parameter time_unit = 4_999_999, BITS = 3)(
     input b, clk, reset_n,
     output dot, dash, lg, wg
     );
